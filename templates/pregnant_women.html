@@ -1,0 +1,44 @@
+{% extends 'hospital/homebase.html' %}
+
+{% block title %}Pregnant Women{% endblock %}
+
+{% load static %}
+
+{% block content %}
+  <h2 class="text-center mb-4">Pregnant Women</h2>
+
+  <div class="row">
+    <!-- Card 1: Food Recommendations -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="{% static 'img_9.jpg' %}" class="card-img-top" alt="Food Recommendations">
+        <div class="card-body">
+          <h5 class="card-title">Food Recommendations</h5>
+          <p class="card-text">Include a variety of nutrient-rich foods in your diet during pregnancy. Consult with your healthcare provider for personalized advice.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Exercise Tips -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="{% static 'img_10.jpg' %}" class="card-img-top" alt="Exercise Tips">
+        <div class="card-body">
+          <h5 class="card-title">Exercise Tips</h5>
+          <p class="card-text">Engage in safe and moderate exercise to promote overall well-being during pregnancy. Consult your doctor before starting any new exercise routine.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Health Tips -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="{% static 'img_11.jpg' %}" class="card-img-top" alt="Health Tips">
+        <div class="card-body">
+          <h5 class="card-title">Health Tips</h5>
+          <p class="card-text">Prioritize prenatal care, get adequate rest, and manage stress. Regular check-ups and a healthy lifestyle contribute to a smooth pregnancy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

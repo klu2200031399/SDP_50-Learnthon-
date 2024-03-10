@@ -1,0 +1,48 @@
+<!-- templates/basic.html -->
+{% extends 'hospital/homebase.html' %}
+{% load static %}
+
+{% block title %}Basic{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <a href="{% url 'pregnant_women' %}" class="text-decoration-none">
+                <div class="card h-100">
+                    <img src="{% static 'img.jpg' %}" class="card-img-top" alt="Pregnant Women">
+                    <div class="card-body">
+                        <h5 class="card-title">Pregnant Women</h5>
+                        <p class="card-text">Information about what food to take, exercises to do, and health tips for pregnant women.</p>
+                        <button class="btn btn-primary">Explore</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <a href="{% url 'gym_trainers' %}" class="text-decoration-none">
+                <div class="card h-100">
+                    <img src="{% static 'img_1.jpg' %}" class="card-img-top" alt="Gym Trainers">
+                    <div class="card-body">
+                        <h5 class="card-title">Gym Trainers</h5>
+                        <p class="card-text">Information about fitness training, workout routines, and health tips for gym trainers.</p>
+                        <button class="btn btn-primary">Explore</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <a href="{% url 'newborn_babies' %}" class="text-decoration-none">
+                <div class="card h-100">
+                    <img src="{% static 'img_2.jpg' %}" class="card-img-top" alt="Newborn Babies">
+                    <div class="card-body">
+                        <h5 class="card-title">Newborn Babies</h5>
+                        <p class="card-text">Information about baby care, feeding, and health tips for newborn babies.</p>
+                        <button class="btn btn-primary">Explore</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+{% endblock %}

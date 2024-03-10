@@ -1,0 +1,44 @@
+{% extends 'hospital/homebase.html' %}
+
+{% block title %}Newborn Babies{% endblock %}
+
+{% load static %}
+
+{% block content %}
+  <h2 class="text-center mb-4">Newborn Babies</h2>
+
+  <div class="row">
+    <!-- Card 1: Feeding Guide -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="{% static 'img_6.jpg' %}" class="card-img-top" alt="Feeding Guide">
+        <div class="card-body">
+          <h5 class="card-title">Feeding Guide</h5>
+          <p class="card-text">Explore essential information about newborn feeding. Learn about feeding schedules, breastfeeding tips, and formula feeding guidance for your little one.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Nutrition Tips -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="{% static 'img_7.jpg' %}" class="card-img-top" alt="Nutrition Tips">
+        <div class="card-body">
+          <h5 class="card-title">Nutrition Tips</h5>
+          <p class="card-text">Discover valuable nutrition tips for newborns. Learn about balanced diets, essential nutrients, and feeding practices to ensure your baby's healthy development.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Health Tips -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="{% static 'img_8.jpg' %}" class="card-img-top" alt="Health Tips">
+        <div class="card-body">
+          <h5 class="card-title">Health Tips</h5>
+          <p class="card-text">Access important health tips for your newborn. From basic care to early development, these tips will guide you in ensuring the well-being of your baby.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

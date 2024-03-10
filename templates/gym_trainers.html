@@ -1,0 +1,44 @@
+{% extends 'hospital/homebase.html' %}
+
+{% block title %}Gym Trainers{% endblock %}
+
+{% load static %}
+
+{% block content %}
+  <h2 class="text-center mb-4">Gym Trainers</h2>
+
+  <div class="row">
+    <!-- Card 1: Workout Routines -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="{% static 'img_3.jpg' %}" class="card-img-top" alt="Workout Routines">
+        <div class="card-body">
+          <h5 class="card-title">Effective Workout Routines</h5>
+          <p class="card-text">Discover professionally tailored workout routines designed to help you achieve your fitness goals. Whether you're a beginner or an experienced gym-goer, these routines are crafted to provide results.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Nutrition Guidance -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="{% static 'img_4.jpg' %}" class="card-img-top" alt="Nutrition Guidance">
+        <div class="card-body">
+          <h5 class="card-title">Nutrition Guidance</h5>
+          <p class="card-text">Receive expert advice on nutrition to complement your workout routine. Learn about balanced diets and dietary supplements for optimal results.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Fitness Tips -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="{% static 'img_5.jpg' %}" class="card-img-top" alt="Fitness Tips">
+        <div class="card-body">
+          <h5 class="card-title">Fitness Tips</h5>
+          <p class="card-text">Explore valuable fitness tips and insights from experienced gym trainers. Enhance your training experience and boost your fitness journey.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
